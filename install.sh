@@ -1,11 +1,6 @@
 #!/bin/sh
 
-echo "==========================================================="
-echo "             Install Jetbrains Mono font                  "
-echo "-----------------------------------------------------------"
-wget https://download.jetbrains.com/fonts/JetBrainsMono-2.001.zip
-sudo unzip JetBrainsMono-2.001.zip -d /usr/share/fonts
-sudo fc-cache -f -v
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 
 zshrc() {
     echo "==========================================================="
